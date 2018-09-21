@@ -1,0 +1,27 @@
+[[buildpacks]]
+id = "org.cloudfoundry.buildsystem"
+uri = "file://buildsystem"
+
+[[buildpacks]]
+id = "org.cloudfoundry.jvmapplication"
+uri = "file://jvmapplication"
+
+[[buildpacks]]
+id = "org.cloudfoundry.openjdk"
+uri = "file://openjdk"
+
+
+[[groups]]
+
+  [[groups.buildpacks]]
+  id = "org.cloudfoundry.openjdk"
+  version = "1.0.0-BUILD-SNAPSHOT"
+
+  [[groups.buildpacks]]
+  id = "org.cloudfoundry.buildsystem"
+  version = "1.0.0-BUILD-SNAPSHOT"
+  optional = true
+
+  [[groups.buildpacks]]
+  id = "org.cloudfoundry.jvmapplication"
+  version = "1.0.0-BUILD-SNAPSHOT"
