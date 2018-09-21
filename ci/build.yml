@@ -8,10 +8,10 @@ image_resource:
     tag: latest
 
 inputs:
-- name: build-system-buildpack
+- name: build-system-buildpack-artifactory
 - name: java-buildpack-group
-- name: jvm-application-buildpack
-- name: openjdk-buildpack
+- name: jvm-application-buildpack-artifactory
+- name: openjdk-buildpack-artifactory
 - name: pack
 
 run:
