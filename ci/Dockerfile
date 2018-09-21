@@ -5,6 +5,7 @@ RUN apt-get update \
       apt-transport-https \
       ca-certificates \
       curl \
+      gpg-agent \
       software-properties-common \
  && rm -rf /var/lib/apt/lists/*
 
