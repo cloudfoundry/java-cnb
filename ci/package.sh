@@ -13,6 +13,4 @@ extract build-system-buildpack
 extract jvm-application-buildpack
 extract openjdk-buildpack
 
-tar czvf "$PWD/artifactory/java-buildpack-group.tgz" -C . build-system-buildpack jvm-application-buildpack openjdk-buildpack -C java-buildpack-group builder.toml
-
-tar tvf "$PWD/artifactory/java-buildpack-group.tgz"
+tar czvf "$PWD/artifactory/java-buildpack-group.tgz" build-system-buildpack jvm-application-buildpack openjdk-buildpack -C java-buildpack-group builder.toml
