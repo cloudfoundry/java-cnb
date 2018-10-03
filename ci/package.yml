@@ -12,7 +12,6 @@ inputs:
 - name: java-buildpack-group
 - name: jvm-application-buildpack-artifactory
 - name: openjdk-buildpack-artifactory
-- name: pack
 
 run:
-  path: java-buildpack-group/ci/build.sh
+  path: java-buildpack-group/ci/package.sh
