@@ -13,7 +13,10 @@ extract build-system-buildpack
 extract jvm-application-buildpack
 extract openjdk-buildpack
 
-tar czvf "$PWD/artifactory/java-buildpack-group.tgz" \
+TARGET="$PWD/artifactory/org/cloudfoundry/openjdk/org.cloudfoundry.java/1.0.0-BUILD-SNAPSHOT/org.cloudfoundry.java-1.0.0-BUILD-$(date '+%Y%m%d.%H%M%S')-1.tgz"
+
+mkdir -p $(dirname "$TARGET")
+tar czvf "$TARGET" \
   build-system-buildpack \
   jvm-application-buildpack \
   openjdk-buildpack \
