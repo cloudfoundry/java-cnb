@@ -1,14 +1,14 @@
 [[buildpacks]]
 id = "org.cloudfoundry.buildsystem"
-uri = "file://build-system-buildpack"
+uri = "build-system-buildpack"
 
 [[buildpacks]]
 id = "org.cloudfoundry.jvmapplication"
-uri = "file://jvm-application-buildpack"
+uri = "jvm-application-buildpack"
 
 [[buildpacks]]
 id = "org.cloudfoundry.openjdk"
-uri = "file://openjdk-buildpack"
+uri = "openjdk-buildpack"
 
 
 [[groups]]
