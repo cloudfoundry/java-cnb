@@ -9,6 +9,7 @@ image_resource:
 
 inputs:
 - name: build-system-buildpack-artifactory
+- name: debug-buildpack-artifactory
 - name: java-buildpack-group
 - name: jvm-application-buildpack-artifactory
 - name: openjdk-buildpack-artifactory

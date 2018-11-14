@@ -10,6 +10,7 @@ extract() {
 }
 
 extract build-system-buildpack
+extract debug-buildpack
 extract jvm-application-buildpack
 extract openjdk-buildpack
 
@@ -18,6 +19,7 @@ TARGET="$PWD/artifactory/org/cloudfoundry/openjdk/org.cloudfoundry.java/1.0.0-BU
 mkdir -p $(dirname "$TARGET")
 tar czvf "$TARGET" \
   build-system-buildpack \
+  debug-buildpack \
   jvm-application-buildpack \
   openjdk-buildpack \
   -C java-buildpack-group builder.toml
