@@ -3,16 +3,20 @@ id = "org.cloudfoundry.buildsystem"
 uri = "build-system-buildpack"
 
 [[buildpacks]]
+id = "org.cloudfoundry.debug"
+uri = "debug-buildpack"
+
+[[buildpacks]]
+id = "org.cloudfoundry.jmx"
+uri = "jmx-buildpack"
+
+[[buildpacks]]
 id = "org.cloudfoundry.jvmapplication"
 uri = "jvm-application-buildpack"
 
 [[buildpacks]]
 id = "org.cloudfoundry.openjdk"
 uri = "openjdk-buildpack"
-
-[[buildpacks]]
-id = "org.cloudfoundry.debug"
-uri = "debug-buildpack"
 
 [[groups]]
 
@@ -31,5 +35,10 @@ uri = "debug-buildpack"
 
   [[groups.buildpacks]]
   id = "org.cloudfoundry.debug"
+  version = "1.0.0-BUILD-SNAPSHOT"
+  optional = true
+
+  [[groups.buildpacks]]
+  id = "org.cloudfoundry.jmx"
   version = "1.0.0-BUILD-SNAPSHOT"
   optional = true
