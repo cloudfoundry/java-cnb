@@ -11,6 +11,7 @@ extract() {
 
 extract build-system-buildpack
 extract debug-buildpack
+extract jmx-buildpack
 extract jvm-application-buildpack
 extract openjdk-buildpack
 
@@ -20,6 +21,7 @@ mkdir -p $(dirname "$TARGET")
 tar czvf "$TARGET" \
   build-system-buildpack \
   debug-buildpack \
+  jmx-buildpack \
   jvm-application-buildpack \
   openjdk-buildpack \
   -C java-buildpack-group builder.toml
