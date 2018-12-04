@@ -24,4 +24,4 @@ tar czvf "$TARGET" \
   jmx-buildpack \
   jvm-application-buildpack \
   openjdk-buildpack \
-  -C java-buildpack-group builder.toml
+  -C java-buildpack-group order.toml
