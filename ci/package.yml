@@ -10,8 +10,8 @@ image_resource:
 inputs:
 - name: build-system-buildpack-artifactory
 - name: debug-buildpack-artifactory
-- name: jmx-buildpack-artifactory
 - name: java-buildpack-group
+- name: jmx-buildpack-artifactory
 - name: jvm-application-buildpack-artifactory
 - name: openjdk-buildpack-artifactory
 
@@ -20,3 +20,6 @@ outputs:
 
 run:
   path: java-buildpack-group/ci/package.sh
+
+params:
+  VERSION: 1.0.0-BUILD-SNAPSHOT
