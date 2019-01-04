@@ -11,7 +11,7 @@ labels = [ "java" ]
 buildpacks = [
   { id = "org.cloudfoundry.openjdk",        version = "latest" },
   { id = "org.cloudfoundry.buildsystem",    version = "latest", optional = true },
+  { id = "org.cloudfoundry.jvmapplication", version = "latest" },
   { id = "org.cloudfoundry.debug",          version = "latest", optional = true },
   { id = "org.cloudfoundry.jmx",            version = "latest", optional = true },
-  { id = "org.cloudfoundry.jvmapplication", version = "latest" },
 ]
