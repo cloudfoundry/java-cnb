@@ -9,6 +9,7 @@ extract() {
   tar xzf ${1}-artifactory/**/*.tgz -C ${1}
 }
 
+extract azure-application-insights-buildpack
 extract build-system-buildpack
 extract debug-buildpack
 extract jmx-buildpack
@@ -20,6 +21,7 @@ TARGET="${PWD}/artifactory/$(echo ${ID} | sed 's|\.|/|g')/${ID}/${VERSION}/${ID}
 
 mkdir -p $(dirname "${TARGET}")
 tar czvf "${TARGET}" \
+  azure-application-insights-buildpack \
   build-system-buildpack \
   debug-buildpack \
   jmx-buildpack \

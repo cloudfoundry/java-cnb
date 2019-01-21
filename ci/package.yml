@@ -8,6 +8,7 @@ image_resource:
     tag: latest
 
 inputs:
+- name: azure-application-insights-buildpack-artifactory
 - name: build-system-buildpack-artifactory
 - name: debug-buildpack-artifactory
 - name: java-buildpack-group

@@ -1,17 +1,19 @@
 buildpacks = [
-  { id = "org.cloudfoundry.buildsystem",    uri = "build-system-buildpack",    latest = true },
-  { id = "org.cloudfoundry.debug",          uri = "debug-buildpack",           latest = true },
-  { id = "org.cloudfoundry.jmx",            uri = "jmx-buildpack",             latest = true },
-  { id = "org.cloudfoundry.jvmapplication", uri = "jvm-application-buildpack", latest = true },
-  { id = "org.cloudfoundry.openjdk",        uri = "openjdk-buildpack",         latest = true },
+  { id = "org.cloudfoundry.azureapplicationinsights", uri = "azure-application-insights-buildpack", latest = true },
+  { id = "org.cloudfoundry.buildsystem",              uri = "build-system-buildpack",               latest = true },
+  { id = "org.cloudfoundry.debug",                    uri = "debug-buildpack",                      latest = true },
+  { id = "org.cloudfoundry.jmx",                      uri = "jmx-buildpack",                        latest = true },
+  { id = "org.cloudfoundry.jvmapplication",           uri = "jvm-application-buildpack",            latest = true },
+  { id = "org.cloudfoundry.openjdk",                  uri = "openjdk-buildpack",                    latest = true },
 ]
 
 [[groups]]
 labels = [ "java" ]
 buildpacks = [
-  { id = "org.cloudfoundry.openjdk",        version = "latest" },
-  { id = "org.cloudfoundry.buildsystem",    version = "latest", optional = true },
-  { id = "org.cloudfoundry.jvmapplication", version = "latest" },
-  { id = "org.cloudfoundry.debug",          version = "latest", optional = true },
-  { id = "org.cloudfoundry.jmx",            version = "latest", optional = true },
+  { id = "org.cloudfoundry.openjdk",                  version = "latest" },
+  { id = "org.cloudfoundry.buildsystem",              version = "latest", optional = true },
+  { id = "org.cloudfoundry.jvmapplication",           version = "latest" },
+  { id = "org.cloudfoundry.azureapplicationinsights", version = "latest", optional = true },
+  { id = "org.cloudfoundry.debug",                    version = "latest", optional = true },
+  { id = "org.cloudfoundry.jmx",                      version = "latest", optional = true },
 ]
