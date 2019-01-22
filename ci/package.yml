@@ -11,6 +11,7 @@ inputs:
 - name: azure-application-insights-buildpack-artifactory
 - name: build-system-buildpack-artifactory
 - name: debug-buildpack-artifactory
+- name: google-stackdriver-buildpack-artifactory
 - name: java-buildpack-group
 - name: jmx-buildpack-artifactory
 - name: jvm-application-buildpack-artifactory

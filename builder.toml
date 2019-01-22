@@ -2,6 +2,7 @@ buildpacks = [
   { id = "org.cloudfoundry.azureapplicationinsights", uri = "azure-application-insights-buildpack", latest = true },
   { id = "org.cloudfoundry.buildsystem",              uri = "build-system-buildpack",               latest = true },
   { id = "org.cloudfoundry.debug",                    uri = "debug-buildpack",                      latest = true },
+  { id = "org.cloudfoundry.googlestackdriver",        uri = "google-stackdriver-buildpack",         latest = true },
   { id = "org.cloudfoundry.jmx",                      uri = "jmx-buildpack",                        latest = true },
   { id = "org.cloudfoundry.jvmapplication",           uri = "jvm-application-buildpack",            latest = true },
   { id = "org.cloudfoundry.openjdk",                  uri = "openjdk-buildpack",                    latest = true },
@@ -15,5 +16,6 @@ buildpacks = [
   { id = "org.cloudfoundry.jvmapplication",           version = "latest" },
   { id = "org.cloudfoundry.azureapplicationinsights", version = "latest", optional = true },
   { id = "org.cloudfoundry.debug",                    version = "latest", optional = true },
+  { id = "org.cloudfoundry.googlestackdriver",        version = "latest", optional = true },
   { id = "org.cloudfoundry.jmx",                      version = "latest", optional = true },
 ]

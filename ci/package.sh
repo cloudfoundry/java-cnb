@@ -12,6 +12,7 @@ extract() {
 extract azure-application-insights-buildpack
 extract build-system-buildpack
 extract debug-buildpack
+extract google-stackdriver-buildpack
 extract jmx-buildpack
 extract jvm-application-buildpack
 extract openjdk-buildpack
@@ -24,6 +25,7 @@ tar czvf "${TARGET}" \
   azure-application-insights-buildpack \
   build-system-buildpack \
   debug-buildpack \
+  google-stackdriver-buildpack \
   jmx-buildpack \
   jvm-application-buildpack \
   openjdk-buildpack \
