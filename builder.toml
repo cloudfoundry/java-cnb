@@ -6,6 +6,7 @@ buildpacks = [
   { id = "org.cloudfoundry.jmx",                      uri = "jmx-buildpack",                        latest = true },
   { id = "org.cloudfoundry.jvmapplication",           uri = "jvm-application-buildpack",            latest = true },
   { id = "org.cloudfoundry.openjdk",                  uri = "openjdk-buildpack",                    latest = true },
+  { id = "org.cloudfoundry.procfile",                 uri = "procfile-buildpack",                   latest = true },
 ]
 
 [[groups]]
@@ -14,8 +15,11 @@ buildpacks = [
   { id = "org.cloudfoundry.openjdk",                  version = "latest" },
   { id = "org.cloudfoundry.buildsystem",              version = "latest", optional = true },
   { id = "org.cloudfoundry.jvmapplication",           version = "latest" },
+
   { id = "org.cloudfoundry.azureapplicationinsights", version = "latest", optional = true },
   { id = "org.cloudfoundry.debug",                    version = "latest", optional = true },
   { id = "org.cloudfoundry.googlestackdriver",        version = "latest", optional = true },
   { id = "org.cloudfoundry.jmx",                      version = "latest", optional = true },
+
+  { id = "org.cloudfoundry.procfile",                 version = "latest", optional = true },
 ]

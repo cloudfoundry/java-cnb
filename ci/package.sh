@@ -16,6 +16,7 @@ extract google-stackdriver-buildpack
 extract jmx-buildpack
 extract jvm-application-buildpack
 extract openjdk-buildpack
+extract procfile-buildpack
 
 ID="org.cloudfoundry.java"
 TARGET="${PWD}/artifactory/$(echo ${ID} | sed 's|\.|/|g')/${ID}/${VERSION}/${ID}-$(echo ${VERSION} | sed "s|SNAPSHOT|$(date '+%Y%m%d.%H%M%S')-1|").tgz"
@@ -29,4 +30,5 @@ tar czvf "${TARGET}" \
   jmx-buildpack \
   jvm-application-buildpack \
   openjdk-buildpack \
+  procfile-buildpack \
   -C java-buildpack-group builder.toml

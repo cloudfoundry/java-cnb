@@ -16,6 +16,7 @@ inputs:
 - name: jmx-buildpack-artifactory
 - name: jvm-application-buildpack-artifactory
 - name: openjdk-buildpack-artifactory
+- name: procfile-buildpack-artifactory
 
 outputs:
 - name: artifactory
