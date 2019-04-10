@@ -8,15 +8,15 @@ image_resource:
     tag: latest
 
 inputs:
-- name: azure-application-insights-buildpack-artifactory
-- name: build-system-buildpack-artifactory
-- name: debug-buildpack-artifactory
-- name: google-stackdriver-buildpack-artifactory
+- name: azure-application-insights-cnb-artifactory
+- name: build-system-cnb-artifactory
+- name: debug-cnb-artifactory
+- name: google-stackdriver-cnb-artifactory
 - name: java-buildpack-group
-- name: jmx-buildpack-artifactory
-- name: jvm-application-buildpack-artifactory
-- name: openjdk-buildpack-artifactory
-- name: procfile-buildpack-artifactory
+- name: jmx-cnb-artifactory
+- name: jvm-application-cnb-artifactory
+- name: openjdk-cnb-artifactory
+- name: procfile-cnb-artifactory
 
 outputs:
 - name: artifactory

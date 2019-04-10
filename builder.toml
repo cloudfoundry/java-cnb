@@ -1,12 +1,12 @@
 buildpacks = [
-  { id = "org.cloudfoundry.azureapplicationinsights", uri = "azure-application-insights-buildpack", latest = true },
-  { id = "org.cloudfoundry.buildsystem",              uri = "build-system-buildpack",               latest = true },
-  { id = "org.cloudfoundry.debug",                    uri = "debug-buildpack",                      latest = true },
-  { id = "org.cloudfoundry.googlestackdriver",        uri = "google-stackdriver-buildpack",         latest = true },
-  { id = "org.cloudfoundry.jmx",                      uri = "jmx-buildpack",                        latest = true },
-  { id = "org.cloudfoundry.jvmapplication",           uri = "jvm-application-buildpack",            latest = true },
-  { id = "org.cloudfoundry.openjdk",                  uri = "openjdk-buildpack",                    latest = true },
-  { id = "org.cloudfoundry.procfile",                 uri = "procfile-buildpack",                   latest = true },
+  { id = "org.cloudfoundry.azureapplicationinsights", uri = "azure-application-insights-cnb", latest = true },
+  { id = "org.cloudfoundry.buildsystem",              uri = "build-system-cnb",               latest = true },
+  { id = "org.cloudfoundry.debug",                    uri = "debug-cnb",                      latest = true },
+  { id = "org.cloudfoundry.googlestackdriver",        uri = "google-stackdriver-cnb",         latest = true },
+  { id = "org.cloudfoundry.jmx",                      uri = "jmx-cnb",                        latest = true },
+  { id = "org.cloudfoundry.jvmapplication",           uri = "jvm-application-cnb",            latest = true },
+  { id = "org.cloudfoundry.openjdk",                  uri = "openjdk-cnb",                    latest = true },
+  { id = "org.cloudfoundry.procfile",                 uri = "procfile-cnb",                   latest = true },
 ]
 
 [[groups]]
