@@ -25,7 +25,7 @@ buildpacks = [
   { id = "org.cloudfoundry.jdbc",                     version = "latest", optional = true },
   { id = "org.cloudfoundry.jmx",                      version = "latest", optional = true },
 
-  { id = "org.cloudfoundry.procfile",                 version = "latest", optional = true },
   { id = "org.cloudfoundry.tomcat",                   version = "latest", optional = true },
   { id = "org.cloudfoundry.distzip",                  version = "latest", optional = true },
+  { id = "org.cloudfoundry.procfile",                 version = "latest", optional = true },
 ]
