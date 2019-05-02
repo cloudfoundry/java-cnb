@@ -11,6 +11,7 @@ inputs:
 - name: azure-application-insights-cnb-artifactory
 - name: build-system-cnb-artifactory
 - name: debug-cnb-artifactory
+- name: dist-zip-cnb-artifactory
 - name: google-stackdriver-cnb-artifactory
 - name: java-buildpack-group
 - name: jdbc-cnb-artifactory
@@ -18,6 +19,7 @@ inputs:
 - name: jvm-application-cnb-artifactory
 - name: openjdk-cnb-artifactory
 - name: procfile-cnb-artifactory
+- name: tomcat-cnb-artifactory
 
 outputs:
 - name: artifactory

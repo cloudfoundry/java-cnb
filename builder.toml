@@ -8,6 +8,8 @@ buildpacks = [
   { id = "org.cloudfoundry.jvmapplication",           uri = "jvm-application-cnb",            latest = true },
   { id = "org.cloudfoundry.openjdk",                  uri = "openjdk-cnb",                    latest = true },
   { id = "org.cloudfoundry.procfile",                 uri = "procfile-cnb",                   latest = true },
+  { id = "org.cloudfoundry.tomcat",                   uri = "tomcat-cnb",                     latest = true },
+  { id = "org.cloudfoundry.distzip",                  uri = "dis-zip-cnb",                    latest = true },
 ]
 
 [[groups]]
@@ -24,4 +26,6 @@ buildpacks = [
   { id = "org.cloudfoundry.jmx",                      version = "latest", optional = true },
 
   { id = "org.cloudfoundry.procfile",                 version = "latest", optional = true },
+  { id = "org.cloudfoundry.tomcat",                   version = "latest", optional = true },
+  { id = "org.cloudfoundry.distzip",                  version = "latest", optional = true },
 ]

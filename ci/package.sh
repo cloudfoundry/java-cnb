@@ -12,12 +12,14 @@ extract() {
 extract azure-application-insights-cnb
 extract build-system-cnb
 extract debug-cnb
+extract dist-zip-cnb
 extract google-stackdriver-cnb
 extract jdbc-cnb
 extract jmx-cnb
 extract jvm-application-cnb
 extract openjdk-cnb
 extract procfile-cnb
+extract tomcat-cnb
 
 ID="org.cloudfoundry.java"
 TARGET="${PWD}/artifactory/$(echo ${ID} | sed 's|\.|/|g')/${ID}/${VERSION}/${ID}-$(echo ${VERSION} | sed "s|SNAPSHOT|$(date '+%Y%m%d.%H%M%S')-1|").tgz"
@@ -27,10 +29,12 @@ tar czvf "${TARGET}" \
   azure-application-insights-cnb \
   build-system-cnb \
   debug-cnb \
+  dist-zip-cnb \
   google-stackdriver-cnb \
   jdbc-cnb \
   jmx-cnb \
   jvm-application-cnb \
   openjdk-cnb \
   procfile-cnb \
+  tomcat-cnb \
   -C java-buildpack-group builder.toml
