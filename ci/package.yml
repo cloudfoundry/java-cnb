@@ -13,6 +13,7 @@ inputs:
 - name: debug-cnb-artifactory
 - name: google-stackdriver-cnb-artifactory
 - name: java-buildpack-group
+- name: jdbc-cnb-artifactory
 - name: jmx-cnb-artifactory
 - name: jvm-application-cnb-artifactory
 - name: openjdk-cnb-artifactory

@@ -3,6 +3,7 @@ buildpacks = [
   { id = "org.cloudfoundry.buildsystem",              uri = "build-system-cnb",               latest = true },
   { id = "org.cloudfoundry.debug",                    uri = "debug-cnb",                      latest = true },
   { id = "org.cloudfoundry.googlestackdriver",        uri = "google-stackdriver-cnb",         latest = true },
+  { id = "org.cloudfoundry.jdbc",                     uri = "jdbc-cnb",                       latest = true },
   { id = "org.cloudfoundry.jmx",                      uri = "jmx-cnb",                        latest = true },
   { id = "org.cloudfoundry.jvmapplication",           uri = "jvm-application-cnb",            latest = true },
   { id = "org.cloudfoundry.openjdk",                  uri = "openjdk-cnb",                    latest = true },
@@ -19,6 +20,7 @@ buildpacks = [
   { id = "org.cloudfoundry.azureapplicationinsights", version = "latest", optional = true },
   { id = "org.cloudfoundry.debug",                    version = "latest", optional = true },
   { id = "org.cloudfoundry.googlestackdriver",        version = "latest", optional = true },
+  { id = "org.cloudfoundry.jdbc",                     version = "latest", optional = true },
   { id = "org.cloudfoundry.jmx",                      version = "latest", optional = true },
 
   { id = "org.cloudfoundry.procfile",                 version = "latest", optional = true },

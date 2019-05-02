@@ -13,6 +13,7 @@ extract azure-application-insights-cnb
 extract build-system-cnb
 extract debug-cnb
 extract google-stackdriver-cnb
+extract jdbc-cnb
 extract jmx-cnb
 extract jvm-application-cnb
 extract openjdk-cnb
@@ -27,6 +28,7 @@ tar czvf "${TARGET}" \
   build-system-cnb \
   debug-cnb \
   google-stackdriver-cnb \
+  jdbc-cnb \
   jmx-cnb \
   jvm-application-cnb \
   openjdk-cnb \
