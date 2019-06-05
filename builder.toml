@@ -10,7 +10,7 @@ buildpacks = [
   { id = "org.cloudfoundry.procfile",                 uri = "procfile-cnb",                   latest = true },
   { id = "org.cloudfoundry.springboot",               uri = "spring-boot-cnb",                latest = true },
   { id = "org.cloudfoundry.tomcat",                   uri = "tomcat-cnb",                     latest = true },
-  { id = "org.cloudfoundry.distzip",                  uri = "dis-zip-cnb",                    latest = true },
+  { id = "org.cloudfoundry.distzip",                  uri = "dist-zip-cnb",                   latest = true },
 ]
 
 [[groups]]
