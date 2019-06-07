@@ -19,6 +19,7 @@ inputs:
 - name: jvm-application-cnb-artifactory
 - name: openjdk-cnb-artifactory
 - name: procfile-cnb-artifactory
+- name: spring-auto-reconfiguration-cnb-artifactory
 - name: spring-boot-cnb-artifactory
 - name: tomcat-cnb-artifactory
 

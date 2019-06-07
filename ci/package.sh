@@ -19,6 +19,7 @@ extract jmx-cnb
 extract jvm-application-cnb
 extract openjdk-cnb
 extract procfile-cnb
+extract spring-auto-reconfiguration-cnb
 extract spring-boot-cnb
 extract tomcat-cnb
 
@@ -37,6 +38,7 @@ tar czvf "${TARGET}" \
   jvm-application-cnb \
   openjdk-cnb \
   procfile-cnb \
+  spring-auto-reconfiguration-cnb \
   spring-boot-cnb \
   tomcat-cnb \
   -C java-buildpack-group builder.toml
