@@ -9,6 +9,7 @@ extract() {
   tar xzf ${1}-artifactory/**/*.tgz -C ${1}
 }
 
+extract archive-expanding-cnb
 extract azure-application-insights-cnb
 extract build-system-cnb
 extract debug-cnb
@@ -28,6 +29,7 @@ TARGET="${PWD}/artifactory/$(echo ${ID} | sed 's|\.|/|g')/${ID}/${VERSION}/${ID}
 
 mkdir -p $(dirname "${TARGET}")
 tar czvf "${TARGET}" \
+  archive-expanding-cnb \
   azure-application-insights-cnb \
   build-system-cnb \
   debug-cnb \

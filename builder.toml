@@ -1,4 +1,5 @@
 buildpacks = [
+  { id = "org.cloudfoundry.archiveexpanding",         uri = "archive-expanding-cnb",          latest = true },
   { id = "org.cloudfoundry.azureapplicationinsights", uri = "azure-application-insights-cnb", latest = true },
   { id = "org.cloudfoundry.buildsystem",              uri = "build-system-cnb",               latest = true },
   { id = "org.cloudfoundry.debug",                    uri = "debug-cnb",                      latest = true },
@@ -16,18 +17,24 @@ buildpacks = [
 [[groups]]
 labels = [ "java" ]
 buildpacks = [
-  { id = "org.cloudfoundry.openjdk",                  version = "latest" },
-  { id = "org.cloudfoundry.buildsystem",              version = "latest", optional = true },
-  { id = "org.cloudfoundry.jvmapplication",           version = "latest" },
 
-  { id = "org.cloudfoundry.azureapplicationinsights", version = "latest", optional = true },
-  { id = "org.cloudfoundry.debug",                    version = "latest", optional = true },
-  { id = "org.cloudfoundry.googlestackdriver",        version = "latest", optional = true },
-  { id = "org.cloudfoundry.jdbc",                     version = "latest", optional = true },
-  { id = "org.cloudfoundry.jmx",                      version = "latest", optional = true },
+### Order is strictly enforced
+  { id = "org.cloudfoundry.archiveexpanding",          version = "latest", optional = true },
+  { id = "org.cloudfoundry.openjdk",                   version = "latest" },
+  { id = "org.cloudfoundry.buildsystem",               version = "latest", optional = true },
+  { id = "org.cloudfoundry.jvmapplication",            version = "latest" },
 
-  { id = "org.cloudfoundry.springboot",               version = "latest", optional = true },
-  { id = "org.cloudfoundry.tomcat",                   version = "latest", optional = true },
-  { id = "org.cloudfoundry.distzip",                  version = "latest", optional = true },
-  { id = "org.cloudfoundry.procfile",                 version = "latest", optional = true },
+### Order determines precedence
+  { id = "org.cloudfoundry.springboot",                version = "latest", optional = true },
+  { id = "org.cloudfoundry.tomcat",                    version = "latest", optional = true },
+  { id = "org.cloudfoundry.distzip",                   version = "latest", optional = true },
+  { id = "org.cloudfoundry.procfile",                  version = "latest", optional = true },
+
+### Order does not matter
+  { id = "org.cloudfoundry.azureapplicationinsights",  version = "latest", optional = true },
+  { id = "org.cloudfoundry.debug",                     version = "latest", optional = true },
+  { id = "org.cloudfoundry.googlestackdriver",         version = "latest", optional = true },
+  { id = "org.cloudfoundry.jdbc",                      version = "latest", optional = true },
+  { id = "org.cloudfoundry.jmx",                       version = "latest", optional = true },
+  { id = "org.cloudfoundry.springautoreconfiguration", version = "latest", optional = true },
 ]

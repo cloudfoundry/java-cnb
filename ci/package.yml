@@ -8,6 +8,7 @@ image_resource:
     tag: latest
 
 inputs:
+- name: archive-expanding-cnb-artifactory
 - name: azure-application-insights-cnb-artifactory
 - name: build-system-cnb-artifactory
 - name: debug-cnb-artifactory
