@@ -38,3 +38,8 @@ buildpacks = [
   { id = "org.cloudfoundry.jmx",                       version = "latest", optional = true },
   { id = "org.cloudfoundry.springautoreconfiguration", version = "latest", optional = true },
 ]
+
+[stack]
+id = "io.buildpacks.stacks.bionic"
+build-image = "cnbs/build"
+run-image   = "cnbs/run"
