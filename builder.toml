@@ -26,8 +26,8 @@ buildpacks = [
   { id = "org.cloudfoundry.jvmapplication",            version = "latest" },
 
 ### Order determines precedence
-  { id = "org.cloudfoundry.springboot",                version = "latest", optional = true },
   { id = "org.cloudfoundry.tomcat",                    version = "latest", optional = true },
+  { id = "org.cloudfoundry.springboot",                version = "latest", optional = true },
   { id = "org.cloudfoundry.distzip",                   version = "latest", optional = true },
   { id = "org.cloudfoundry.procfile",                  version = "latest", optional = true },
 
