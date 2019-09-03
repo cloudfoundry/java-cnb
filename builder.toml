@@ -1,46 +1,48 @@
 buildpacks = [
-  { id = "org.cloudfoundry.archiveexpanding",          uri = "archive-expanding-cnb",           latest = true },
-  { id = "org.cloudfoundry.azureapplicationinsights",  uri = "azure-application-insights-cnb",  latest = true },
-  { id = "org.cloudfoundry.buildsystem",               uri = "build-system-cnb",                latest = true },
-  { id = "org.cloudfoundry.debug",                     uri = "debug-cnb",                       latest = true },
-  { id = "org.cloudfoundry.distzip",                   uri = "dist-zip-cnb",                    latest = true },
-  { id = "org.cloudfoundry.googlestackdriver",         uri = "google-stackdriver-cnb",          latest = true },
-  { id = "org.cloudfoundry.jdbc",                      uri = "jdbc-cnb",                        latest = true },
-  { id = "org.cloudfoundry.jmx",                       uri = "jmx-cnb",                         latest = true },
-  { id = "org.cloudfoundry.jvmapplication",            uri = "jvm-application-cnb",             latest = true },
-  { id = "org.cloudfoundry.openjdk",                   uri = "openjdk-cnb",                     latest = true },
-  { id = "org.cloudfoundry.procfile",                  uri = "procfile-cnb",                    latest = true },
-  { id = "org.cloudfoundry.springautoreconfiguration", uri = "spring-auto-reconfiguration-cnb", latest = true },
-  { id = "org.cloudfoundry.springboot",                uri = "spring-boot-cnb",                 latest = true },
-  { id = "org.cloudfoundry.tomcat",                    uri = "tomcat-cnb",                      latest = true },
+  { id = "org.cloudfoundry.archiveexpanding",          uri = "/archive-expanding-cnb" },
+  { id = "org.cloudfoundry.azureapplicationinsights",  uri = "/azure-application-insights-cnb" },
+  { id = "org.cloudfoundry.buildsystem",               uri = "/build-system-cnb" },
+  { id = "org.cloudfoundry.debug",                     uri = "/debug-cnb" },
+  { id = "org.cloudfoundry.distzip",                   uri = "/dist-zip-cnb" },
+  { id = "org.cloudfoundry.googlestackdriver",         uri = "/google-stackdriver-cnb" },
+  { id = "org.cloudfoundry.jdbc",                      uri = "/jdbc-cnb" },
+  { id = "org.cloudfoundry.jmx",                       uri = "/jmx-cnb" },
+  { id = "org.cloudfoundry.jvmapplication",            uri = "/jvm-application-cnb" },
+  { id = "org.cloudfoundry.openjdk",                   uri = "/openjdk-cnb" },
+  { id = "org.cloudfoundry.procfile",                  uri = "/procfile-cnb" },
+  { id = "org.cloudfoundry.springautoreconfiguration", uri = "/spring-auto-reconfiguration-cnb" },
+  { id = "org.cloudfoundry.springboot",                uri = "/spring-boot-cnb" },
+  { id = "org.cloudfoundry.tomcat",                    uri = "/tomcat-cnb" },
 ]
 
-[[groups]]
-labels = [ "java" ]
-buildpacks = [
+[[order]]
+group = [
 
 ### Order is strictly enforced
-  { id = "org.cloudfoundry.archiveexpanding",          version = "latest", optional = true },
-  { id = "org.cloudfoundry.openjdk",                   version = "latest" },
-  { id = "org.cloudfoundry.buildsystem",               version = "latest", optional = true },
-  { id = "org.cloudfoundry.jvmapplication",            version = "latest" },
+  { id = "org.cloudfoundry.archiveexpanding",          optional = true },
+  { id = "org.cloudfoundry.openjdk" },
+  { id = "org.cloudfoundry.buildsystem",               optional = true },
+  { id = "org.cloudfoundry.jvmapplication" },
 
 ### Order determines precedence
-  { id = "org.cloudfoundry.tomcat",                    version = "latest", optional = true },
-  { id = "org.cloudfoundry.springboot",                version = "latest", optional = true },
-  { id = "org.cloudfoundry.distzip",                   version = "latest", optional = true },
-  { id = "org.cloudfoundry.procfile",                  version = "latest", optional = true },
+  { id = "org.cloudfoundry.tomcat",                    optional = true },
+  { id = "org.cloudfoundry.springboot",                optional = true },
+  { id = "org.cloudfoundry.distzip",                   optional = true },
+  { id = "org.cloudfoundry.procfile",                  optional = true },
 
 ### Order does not matter
-  { id = "org.cloudfoundry.azureapplicationinsights",  version = "latest", optional = true },
-  { id = "org.cloudfoundry.debug",                     version = "latest", optional = true },
-  { id = "org.cloudfoundry.googlestackdriver",         version = "latest", optional = true },
-  { id = "org.cloudfoundry.jdbc",                      version = "latest", optional = true },
-  { id = "org.cloudfoundry.jmx",                       version = "latest", optional = true },
-  { id = "org.cloudfoundry.springautoreconfiguration", version = "latest", optional = true },
+  { id = "org.cloudfoundry.azureapplicationinsights",  optional = true },
+  { id = "org.cloudfoundry.debug",                     optional = true },
+  { id = "org.cloudfoundry.googlestackdriver",         optional = true },
+  { id = "org.cloudfoundry.jdbc",                      optional = true },
+  { id = "org.cloudfoundry.jmx",                       optional = true },
+  { id = "org.cloudfoundry.springautoreconfiguration", optional = true },
 ]
 
 [stack]
-id = "io.buildpacks.stacks.bionic"
+id          = "io.buildpacks.stacks.bionic"
 build-image = "cnbs/build"
 run-image   = "cnbs/run"
+
+[lifecycle]
+version = "0.4.0"
