@@ -53,7 +53,7 @@ group = [
 id      = "org.cloudfoundry.archiveexpanding"
 name    = "Cloud Foundry Archive Expanding Buildpack"
 version = "1.0.23"
-uri     = "gs://cnb-buildpacks/archive-expanding-cnb/org.cloudfoundry.archiveexpanding-1.0.23.tgz"
+uri     = "https://storage.googleapis.com/cnb-buildpacks/archive-expanding-cnb/org.cloudfoundry.archiveexpanding-1.0.23.tgz"
 sha256  = "ea18962b78b727c51d2dd8f9eeda93db7e1938d4d0e9815ddcc8985cf82e33b6"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
