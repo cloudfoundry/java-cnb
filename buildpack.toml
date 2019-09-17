@@ -35,18 +35,18 @@ group = [
   { id = "org.cloudfoundry.jvmapplication",            version = "1.0.17" },
 
 ### Order determines precedence
-  # { id = "org.cloudfoundry.tomcat",                    version = "0.0.0", optional = true },
-  # { id = "org.cloudfoundry.springboot",                version = "0.0.0", optional = true },
-  # { id = "org.cloudfoundry.distzip",                   version = "0.0.0", optional = true },
-  # { id = "org.cloudfoundry.procfile",                  version = "0.0.0", optional = true },
+  { id = "org.cloudfoundry.tomcat",                    version = "0.0.0", optional = true },
+  { id = "org.cloudfoundry.springboot",                version = "0.0.0", optional = true },
+  { id = "org.cloudfoundry.distzip",                   version = "0.0.0", optional = true },
+  { id = "org.cloudfoundry.procfile",                  version = "0.0.0", optional = true },
 
 ### Order does not matter
-  # { id = "org.cloudfoundry.azureapplicationinsights",  version = "0.0.0", optional = true },
-  # { id = "org.cloudfoundry.debug",                     version = "0.0.0", optional = true },
-  # { id = "org.cloudfoundry.googlestackdriver",         version = "0.0.0", optional = true },
-  # { id = "org.cloudfoundry.jdbc",                      version = "0.0.0", optional = true },
-  # { id = "org.cloudfoundry.jmx",                       version = "0.0.0", optional = true },
-  # { id = "org.cloudfoundry.springautoreconfiguration", version = "0.0.0", optional = true },
+  { id = "org.cloudfoundry.azureapplicationinsights",  version = "0.0.0", optional = true },
+  { id = "org.cloudfoundry.debug",                     version = "0.0.0", optional = true },
+  { id = "org.cloudfoundry.googlestackdriver",         version = "0.0.0", optional = true },
+  { id = "org.cloudfoundry.jdbc",                      version = "0.0.0", optional = true },
+  { id = "org.cloudfoundry.jmx",                       version = "0.0.0", optional = true },
+  { id = "org.cloudfoundry.springautoreconfiguration", version = "0.0.0", optional = true },
 ]
 
 [[metadata.dependencies]]
@@ -62,8 +62,8 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
   uri  = "https://github.com/cloudfoundry/archive-expanding-cnb/blob/master/LICENSE"
 
 [[metadata.dependencies]]
-id      = "org.cloudfoundry.openjdk"
-name    = "Cloud Foundry OpenJDK Buildpack"
+id      = "org.cloudfoundry.azureapplicationinsights"
+name    = "Cloud Foundry Azure Application Insights Buildpack"
 version = "0.0.0"
 uri     = "placeholder-uri"
 sha256  = "placeholder-hash"
@@ -71,7 +71,7 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 
   [[metadata.dependencies.licenses]]
   type = "Apache-2.0"
-  uri  = "https://github.com/cloudfoundry/openjdk-cnb/blob/master/LICENSE"
+  uri  = "https://github.com/cloudfoundry/azure-application-insights-cnb/blob/master/LICENSE"
 
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.buildsystem"
@@ -86,6 +86,66 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
   uri  = "https://github.com/cloudfoundry/build-system-cnb/blob/master/LICENSE"
 
 [[metadata.dependencies]]
+id      = "org.cloudfoundry.debug"
+name    = "Cloud Foundry Debug Buildpack"
+version = "0.0.0"
+uri     = "placeholder-uri"
+sha256  = "placeholder-hash"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/debug-cnb/blob/master/LICENSE"
+
+[[metadata.dependencies]]
+id      = "org.cloudfoundry.distzip"
+name    = "Cloud Foundry DistZip Buildpack"
+version = "0.0.0"
+uri     = "placeholder-uri"
+sha256  = "placeholder-hash"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/dist-zip-cnb/blob/master/LICENSE"
+
+[[metadata.dependencies]]
+id      = "org.cloudfoundry.googlestackdriver"
+name    = "Cloud Foundry Google Stackdriver Buildpack"
+version = "0.0.0"
+uri     = "placeholder-uri"
+sha256  = "placeholder-hash"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/google-stackdriver-cnb/blob/master/LICENSE"
+
+[[metadata.dependencies]]
+id      = "org.cloudfoundry.jdbc"
+name    = "Cloud Foundry JDBC Buildpack"
+version = "0.0.0"
+uri     = "placeholder-uri"
+sha256  = "placeholder-hash"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/jdbc-cnb/blob/master/LICENSE"
+
+[[metadata.dependencies]]
+id      = "org.cloudfoundry.jmx"
+name    = "Cloud Foundry JMX Buildpack"
+version = "0.0.0"
+uri     = "placeholder-uri"
+sha256  = "placeholder-hash"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/jmx-cnb/blob/master/LICENSE"
+
+[[metadata.dependencies]]
 id      = "org.cloudfoundry.jvmapplication"
 name    = "Cloud Foundry JVM Application Buildpack"
 version = "1.0.17"
@@ -96,6 +156,66 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
   [[metadata.dependencies.licenses]]
   type = "Apache-2.0"
   uri  = "https://github.com/cloudfoundry/jvm-application-cnb/blob/master/LICENSE"
+
+[[metadata.dependencies]]
+id      = "org.cloudfoundry.openjdk"
+name    = "Cloud Foundry OpenJDK Buildpack"
+version = "0.0.0"
+uri     = "placeholder-uri"
+sha256  = "placeholder-hash"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/openjdk-cnb/blob/master/LICENSE"
+
+[[metadata.dependencies]]
+id      = "org.cloudfoundry.procfile"
+name    = "Cloud Foundry Procfile Buildpack"
+version = "0.0.0"
+uri     = "placeholder-uri"
+sha256  = "placeholder-hash"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/procfile-cnb/blob/master/LICENSE"
+
+[[metadata.dependencies]]
+id      = "org.cloudfoundry.springautoreconfiguration"
+name    = "Cloud Foundry Spring Auto-reconfiguration Buildpack"
+version = "0.0.0"
+uri     = "placeholder-uri"
+sha256  = "placeholder-hash"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/spring-auto-reconfiguration-cnb/blob/master/LICENSE"
+
+[[metadata.dependencies]]
+id      = "org.cloudfoundry.springboot"
+name    = "Cloud Foundry Spring Boot Buildpack"
+version = "0.0.0"
+uri     = "placeholder-uri"
+sha256  = "placeholder-hash"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/spring-boot-cnb/blob/master/LICENSE"
+
+[[metadata.dependencies]]
+id      = "org.cloudfoundry.tomcat"
+name    = "Cloud Foundry Tomcat Buildpack"
+version = "0.0.0"
+uri     = "placeholder-uri"
+sha256  = "placeholder-hash"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/tomcat-cnb/blob/master/LICENSE"
 
 [metadata]
 include_files = [
