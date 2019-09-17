@@ -25,17 +25,41 @@ id = "io.buildpacks.stacks.bionic"
 [[stacks]]
 id = "org.cloudfoundry.stacks.cflinuxfs3"
 
-# [[metadata.dependencies]]
-# id      = "gradle"
-# name    = "Gradle"
-# version = "5.6.2"
-# uri     = "https://downloads.gradle.org/distributions/gradle-5.6.2-bin.zip"
-# sha256  = "32fce6628848f799b0ad3205ae8db67d0d828c10ffe62b748a7c0d9f4a5d9ee0"
-# stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+[[order]]
+group = [
 
-#   [[metadata.dependencies.licenses]]
-#   type = "Apache-2.0"
-#   uri  = "https://docs.gradle.org/current/userguide/userguide.html#licenses"
+### Order is strictly enforced
+  { id = "org.cloudfoundry.archiveexpanding",          version = "0.0.0", optional = true },
+  # { id = "org.cloudfoundry.openjdk",                   version = "0.0.0" },
+  # { id = "org.cloudfoundry.buildsystem",               version = "0.0.0", optional = true },
+  # { id = "org.cloudfoundry.jvmapplication",            version = "0.0.0" },
+
+### Order determines precedence
+  # { id = "org.cloudfoundry.tomcat",                    version = "0.0.0", optional = true },
+  # { id = "org.cloudfoundry.springboot",                version = "0.0.0", optional = true },
+  # { id = "org.cloudfoundry.distzip",                   version = "0.0.0", optional = true },
+  # { id = "org.cloudfoundry.procfile",                  version = "0.0.0", optional = true },
+
+### Order does not matter
+  # { id = "org.cloudfoundry.azureapplicationinsights",  version = "0.0.0", optional = true },
+  # { id = "org.cloudfoundry.debug",                     version = "0.0.0", optional = true },
+  # { id = "org.cloudfoundry.googlestackdriver",         version = "0.0.0", optional = true },
+  # { id = "org.cloudfoundry.jdbc",                      version = "0.0.0", optional = true },
+  # { id = "org.cloudfoundry.jmx",                       version = "0.0.0", optional = true },
+  # { id = "org.cloudfoundry.springautoreconfiguration", version = "0.0.0", optional = true },
+]
+
+[[metadata.dependencies]]
+id      = "org.cloudfoundry.archiveexpanding"
+name    = "Cloud Foundry Archive Expanding Buildpack"
+version = "0.0.0"
+uri     = "placeholder-uri"
+sha256  = "placeholder-hash"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/archive-expanding-cnb/blob/master/LICENSE"
 
 # [[metadata.dependencies]]
 # id      = "maven"
