@@ -1,5 +1,5 @@
 uri() {
-  cat ../dependency/url
+  echo $(cat ../dependency/url) | sed 's|gs://|https://storage.googleapis.com/|'
 }
 
 sha256() {
