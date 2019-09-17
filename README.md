@@ -1,5 +1,5 @@
-# `java-buildpack-group`
-The Cloud Foundry Java Buildpack Group is a Cloud Native Buildpack Group that provides buildpacks for staging Java applications.
+# `java-cnb`
+The Cloud Foundry Java Buildpack is a Cloud Native Buildpack V3 that groups the buildpacks for building Java applications.
 
 ## Included Buildpacks
 * [`archive-expanding-cnb`](https://github.com/cloudfoundry/archive-expanding-cnb)
@@ -18,6 +18,7 @@ The Cloud Foundry Java Buildpack Group is a Cloud Native Buildpack Group that pr
 * [`tomcat-cnb`](https://github.com/cloudfoundry/tomcat-cnb)
 
 ## License
-This buildpack group is released under version 2.0 of the [Apache License][a].
+This buildpack is released under version 2.0 of the [Apache License][a].
 
 [a]: https://www.apache.org/licenses/LICENSE-2.0
+
