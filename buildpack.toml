@@ -30,7 +30,7 @@ group = [
 
 ### Order is strictly enforced
   { id = "org.cloudfoundry.archiveexpanding",          version = "1.0.24", optional = true },
-  # { id = "org.cloudfoundry.openjdk",                   version = "0.0.0" },
+  { id = "org.cloudfoundry.openjdk",                   version = "0.0.0" },
   # { id = "org.cloudfoundry.buildsystem",               version = "0.0.0", optional = true },
   # { id = "org.cloudfoundry.jvmapplication",            version = "0.0.0" },
 
@@ -61,17 +61,17 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
   type = "Apache-2.0"
   uri  = "https://github.com/cloudfoundry/archive-expanding-cnb/blob/master/LICENSE"
 
-# [[metadata.dependencies]]
-# id      = "maven"
-# name    = "Apache Maven"
-# version = "3.6.2"
-# uri     = "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.6.2/apache-maven-3.6.2-bin.tar.gz"
-# sha256  = "3fbc92d1961482d6fbd57fbf3dd6d27a4de70778528ee3fb44aa7d27eb32dfdc"
-# stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+[[metadata.dependencies]]
+id      = "org.cloudfoundry.openjdk"
+name    = "Cloud Foundry OpenJDK Buildpack"
+version = "0.0.0"
+uri     = "placeholder-uri"
+sha256  = "placeholder-hash"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
-#   [[metadata.dependencies.licenses]]
-#   type = "Apache-2.0"
-#   uri  = "https://www.apache.org/licenses/"
+  [[metadata.dependencies.licenses]]
+  type = "Apache-2.0"
+  uri  = "https://github.com/cloudfoundry/openjdk-cnb/blob/master/LICENSE"
 
 [metadata]
 include_files = [
