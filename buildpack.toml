@@ -31,7 +31,7 @@ group = [
 ### Order is strictly enforced
   { id = "org.cloudfoundry.archiveexpanding",          version = "1.0.28", optional = true },
   { id = "org.cloudfoundry.openjdk",                   version = "1.0.15" },
-  { id = "org.cloudfoundry.buildsystem",               version = "1.0.30", optional = true },
+  { id = "org.cloudfoundry.buildsystem",               version = "1.0.31", optional = true },
   { id = "org.cloudfoundry.jvmapplication",            version = "1.0.22" },
 
 ### Order determines precedence
@@ -76,9 +76,9 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.buildsystem"
 name    = "Cloud Foundry Build System Buildpack"
-version = "1.0.30"
-uri     = "https://storage.googleapis.com/cnb-buildpacks/build-system-cnb/org.cloudfoundry.buildsystem-1.0.30.tgz"
-sha256  = "3f910c667a01d2e1f788eb0e950d040941397a0fb34db35081d4258936ec0225"
+version = "1.0.31"
+uri     = "https://storage.googleapis.com/cnb-buildpacks/build-system-cnb/org.cloudfoundry.buildsystem-1.0.31.tgz"
+sha256  = "4c38d58e1bced4a83c0c9b91bb8d3af9c7a008482c5ef0967baa3ba04affd913"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
