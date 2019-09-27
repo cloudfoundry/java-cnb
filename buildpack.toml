@@ -46,7 +46,7 @@ group = [
   { id = "org.cloudfoundry.googlestackdriver",         version = "1.0.22", optional = true },
   { id = "org.cloudfoundry.jdbc",                      version = "1.0.38", optional = true },
   { id = "org.cloudfoundry.jmx",                       version = "1.0.37", optional = true },
-  { id = "org.cloudfoundry.springautoreconfiguration", version = "1.0.44", optional = true },
+  { id = "org.cloudfoundry.springautoreconfiguration", version = "1.0.45", optional = true },
 ]
 
 [[metadata.dependencies]]
@@ -184,9 +184,9 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.springautoreconfiguration"
 name    = "Cloud Foundry Spring Auto-reconfiguration Buildpack"
-version = "1.0.44"
-uri     = "https://storage.googleapis.com/cnb-buildpacks/spring-auto-reconfiguration-cnb/org.cloudfoundry.springautoreconfiguration-1.0.44.tgz"
-sha256  = "f575f3ef5678980144809f9d3be6f0863595347048aec6feda8502d754887369"
+version = "1.0.45"
+uri     = "https://storage.googleapis.com/cnb-buildpacks/spring-auto-reconfiguration-cnb/org.cloudfoundry.springautoreconfiguration-1.0.45.tgz"
+sha256  = "37fba9e589a35693bb548547ff4713282ede82acc7b3bc30bc8372db7f2b1694"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
