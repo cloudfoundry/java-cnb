@@ -29,7 +29,7 @@ id = "org.cloudfoundry.stacks.cflinuxfs3"
 group = [
 
 ### Order is strictly enforced
-  { id = "org.cloudfoundry.archiveexpanding",          version = "1.0.47", optional = true },
+  { id = "org.cloudfoundry.archiveexpanding",          version = "1.0.49", optional = true },
   { id = "org.cloudfoundry.openjdk",                   version = "1.0.25" },
   { id = "org.cloudfoundry.buildsystem",               version = "1.0.59", optional = true },
   { id = "org.cloudfoundry.jvmapplication",            version = "1.0.38" },
@@ -52,9 +52,9 @@ group = [
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.archiveexpanding"
 name    = "Cloud Foundry Archive Expanding Buildpack"
-version = "1.0.47"
-uri     = "https://storage.googleapis.com/cnb-buildpacks/archive-expanding-cnb/org.cloudfoundry.archiveexpanding-1.0.47.tgz"
-sha256  = "a8232f8e10d082069ea78d0c040eea66610698e49e3b4b4a410fba8cc35d6970"
+version = "1.0.49"
+uri     = "https://storage.googleapis.com/cnb-buildpacks/archive-expanding-cnb/org.cloudfoundry.archiveexpanding-1.0.49.tgz"
+sha256  = "a2936fc5c172a8a3cea75528f5730aa2f169947a3e2e96aeda043105a5a402eb"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
