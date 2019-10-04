@@ -49,6 +49,11 @@ group = [
   { id = "org.cloudfoundry.springautoreconfiguration", version = "1.0.59", optional = true },
 ]
 
+[stack]
+id          = "io.buildpacks.stacks.bionic"
+build-image = "cloudfoundry/build:base-cnb"
+run-image   = "cloudfoundry/run:base-cnb"
+
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.archiveexpanding"
 name    = "Cloud Foundry Archive Expanding Buildpack"
