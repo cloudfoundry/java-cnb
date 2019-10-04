@@ -30,7 +30,7 @@ group = [
 
 ### Order is strictly enforced
   { id = "org.cloudfoundry.archiveexpanding",          version = "1.0.51", optional = true },
-  { id = "org.cloudfoundry.openjdk",                   version = "1.0.26" },
+  { id = "org.cloudfoundry.openjdk",                   version = "1.0.27" },
   { id = "org.cloudfoundry.buildsystem",               version = "1.0.62", optional = true },
   { id = "org.cloudfoundry.jvmapplication",            version = "1.0.40" },
 
@@ -165,9 +165,9 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.openjdk"
 name    = "Cloud Foundry OpenJDK Buildpack"
-version = "1.0.26"
-uri     = "https://storage.googleapis.com/cnb-buildpacks/openjdk-cnb/org.cloudfoundry.openjdk-1.0.26.tgz"
-sha256  = "bad729bccb08dfff4b23bd7321f89a1b46630515e4ed14306fedc28826404d4e"
+version = "1.0.27"
+uri     = "https://storage.googleapis.com/cnb-buildpacks/openjdk-cnb/org.cloudfoundry.openjdk-1.0.27.tgz"
+sha256  = "0e11f3ee3cc189bc510a4ce85773f148f229f84a656d632628f98471ca369e0c"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
