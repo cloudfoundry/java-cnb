@@ -44,7 +44,7 @@ group = [
   { id = "org.cloudfoundry.azureapplicationinsights",  version = "1.0.82", optional = true },
   { id = "org.cloudfoundry.debug",                     version = "1.0.81", optional = true },
   { id = "org.cloudfoundry.googlestackdriver",         version = "1.0.28", optional = true },
-  { id = "org.cloudfoundry.jdbc",                      version = "1.0.80", optional = true },
+  { id = "org.cloudfoundry.jdbc",                      version = "1.0.82", optional = true },
   { id = "org.cloudfoundry.jmx",                       version = "1.0.79", optional = true },
   { id = "org.cloudfoundry.springautoreconfiguration", version = "1.0.88", optional = true },
 ]
@@ -129,9 +129,9 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.jdbc"
 name    = "Cloud Foundry JDBC Buildpack"
-version = "1.0.80"
-uri     = "https://storage.googleapis.com/cnb-buildpacks/jdbc-cnb/org.cloudfoundry.jdbc-1.0.80.tgz"
-sha256  = "972652edbb84608c3b6fdcf86450fef9fa66506ae2287247ecd357f07a30eaa6"
+version = "1.0.82"
+uri     = "https://storage.googleapis.com/cnb-buildpacks/jdbc-cnb/org.cloudfoundry.jdbc-1.0.82.tgz"
+sha256  = "72c85c383982e6f306028a159da90ef241259bea6b71815c9ecb4fb8677e4853"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
