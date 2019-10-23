@@ -19,12 +19,6 @@ id      = "org.cloudfoundry.java"
 name    = "Cloud Foundry Java Buildpack"
 version = "{{.Version}}"
 
-[[stacks]]
-id = "io.buildpacks.stacks.bionic"
-
-[[stacks]]
-id = "org.cloudfoundry.stacks.cflinuxfs3"
-
 [[order]]
 group = [
 
