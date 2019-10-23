@@ -38,7 +38,7 @@ group = [
   { id = "org.cloudfoundry.tomcat",                    version = "1.1.0", optional = true },
   { id = "org.cloudfoundry.springboot",                version = "1.0.84", optional = true },
   { id = "org.cloudfoundry.distzip",                   version = "1.0.81", optional = true },
-  { id = "org.cloudfoundry.procfile",                  version = "1.0.31", optional = true },
+  { id = "org.cloudfoundry.procfile",                  version = "1.0.32", optional = true },
 
 ### Order does not matter
   { id = "org.cloudfoundry.azureapplicationinsights",  version = "1.0.86", optional = true },
@@ -177,9 +177,9 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.procfile"
 name    = "Cloud Foundry Procfile Buildpack"
-version = "1.0.31"
-uri     = "https://storage.googleapis.com/cnb-buildpacks/procfile-cnb/org.cloudfoundry.procfile-1.0.31.tgz"
-sha256  = "46ddaf24cc66b615c215d5693f30bb02d3038d1454b2bc937f741d1aa2c40cd8"
+version = "1.0.32"
+uri     = "https://storage.googleapis.com/cnb-buildpacks/procfile-cnb/org.cloudfoundry.procfile-1.0.32.tgz"
+sha256  = "c352d1132f0e6eaf9e4231ff7a39da39a1769eebf604a12cf713a6881da71892"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
