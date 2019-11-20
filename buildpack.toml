@@ -25,9 +25,9 @@ group = [
 ### Order is strictly enforced
   { id = "org.cloudfoundry.openjdk",                   version = "1.0.59" },
   { id = "org.cloudfoundry.buildsystem",               version = "1.0.137", optional = true },
-  { id = "org.cloudfoundry.jvmapplication",            version = "1.0.84" },
 
 ### Order determines precedence
+  { id = "org.cloudfoundry.jvmapplication",            version = "1.0.84" },
   { id = "org.cloudfoundry.tomcat",                    version = "1.1.27", optional = true },
   { id = "org.cloudfoundry.springboot",                version = "1.0.115", optional = true },
   { id = "org.cloudfoundry.distzip",                   version = "1.0.104", optional = true },
