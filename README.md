@@ -2,7 +2,6 @@
 The Cloud Foundry Java Buildpack is a Cloud Native Buildpack V3 that groups the buildpacks for building Java applications.
 
 ## Included Buildpacks
-* [`archive-expanding-cnb`](https://github.com/cloudfoundry/archive-expanding-cnb)
 * [`azure-application-insights-cnb`](https://github.com/cloudfoundry/azure-application-insights-cnb)
 * [`build-system-cnb`](https://github.com/cloudfoundry/build-system-cnb)
 * [`debug-cnb`](https://github.com/cloudfoundry/debug-cnb)
