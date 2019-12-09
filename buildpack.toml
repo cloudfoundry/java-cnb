@@ -38,7 +38,7 @@ group = [
   { id = "org.cloudfoundry.debug",                     version = "1.0.109", optional = true },
   { id = "org.cloudfoundry.googlestackdriver",         version = "1.0.57", optional = true },
   { id = "org.cloudfoundry.jdbc",                      version = "1.0.113", optional = true },
-  { id = "org.cloudfoundry.jmx",                       version = "1.0.110", optional = true },
+  { id = "org.cloudfoundry.jmx",                       version = "1.0.111", optional = true },
   { id = "org.cloudfoundry.springautoreconfiguration", version = "1.0.116", optional = true },
 ]
 
@@ -122,9 +122,9 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.jmx"
 name    = "Cloud Foundry JMX Buildpack"
-version = "1.0.110"
-uri     = "https://storage.googleapis.com/cnb-buildpacks/jmx-cnb/org.cloudfoundry.jmx-1.0.110.tgz"
-sha256  = "1cea6d588fc555dd9a57bfe81d71cde073e7b8a8d9d3f704a2264d34cf93e72f"
+version = "1.0.111"
+uri     = "https://storage.googleapis.com/cnb-buildpacks/jmx-cnb/org.cloudfoundry.jmx-1.0.111.tgz"
+sha256  = "5f34c306ad48a52c92412d7b19478f707a67fd85901223fd097aa2cbb5ae3efc"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
