@@ -29,7 +29,7 @@ group = [
 ### Order determines precedence
   { id = "org.cloudfoundry.jvmapplication",            version = "1.0.88" },
   { id = "org.cloudfoundry.tomcat",                    version = "1.1.38", optional = true },
-  { id = "org.cloudfoundry.springboot",                version = "1.0.120", optional = true },
+  { id = "org.cloudfoundry.springboot",                version = "1.0.121", optional = true },
   { id = "org.cloudfoundry.distzip",                   version = "1.0.109", optional = true },
   { id = "org.cloudfoundry.procfile",                  version = "1.0.47", optional = true },
 
@@ -182,9 +182,9 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.springboot"
 name    = "Cloud Foundry Spring Boot Buildpack"
-version = "1.0.120"
-uri     = "https://storage.googleapis.com/cnb-buildpacks/spring-boot-cnb/org.cloudfoundry.springboot-1.0.120.tgz"
-sha256  = "2a9c389625451b60fe96ca0e38d97529042a4d98e85bda7f6becb72eeb251942"
+version = "1.0.121"
+uri     = "https://storage.googleapis.com/cnb-buildpacks/spring-boot-cnb/org.cloudfoundry.springboot-1.0.121.tgz"
+sha256  = "2ed715ede33d052b030b39e239c0c7f8bb4f7fd9f4e2f0c99cfcaf7047bff48b"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
