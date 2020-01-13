@@ -34,7 +34,7 @@ group = [
   { id = "org.cloudfoundry.procfile",                  version = "1.0.63", optional = true },
 
 ### Order does not matter
-  { id = "org.cloudfoundry.azureapplicationinsights",  version = "1.0.155", optional = true },
+  { id = "org.cloudfoundry.azureapplicationinsights",  version = "1.0.156", optional = true },
   { id = "org.cloudfoundry.debug",                     version = "1.1.23", optional = true },
   { id = "org.cloudfoundry.googlestackdriver",         version = "1.0.102", optional = true },
   { id = "org.cloudfoundry.jdbc",                      version = "1.0.158", optional = true },
@@ -50,9 +50,9 @@ run-image   = "cloudfoundry/run:base-cnb"
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.azureapplicationinsights"
 name    = "Cloud Foundry Azure Application Insights Buildpack"
-version = "1.0.155"
-uri     = "https://storage.googleapis.com/cnb-buildpacks/azure-application-insights-cnb/org.cloudfoundry.azureapplicationinsights-1.0.155.tgz"
-sha256  = "27b1c468a03359ffbd3503846843ba3cf9728908a683f4ed713b67eeb1f72adc"
+version = "1.0.156"
+uri     = "https://storage.googleapis.com/cnb-buildpacks/azure-application-insights-cnb/org.cloudfoundry.azureapplicationinsights-1.0.156.tgz"
+sha256  = "c6837345822de32bee443fd66f9d7fe38851d222707f89ba5d53c1602f1752f4"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
