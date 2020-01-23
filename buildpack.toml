@@ -30,7 +30,7 @@ group = [
   { id = "org.cloudfoundry.jvmapplication",            version = "1.0.126" },
   { id = "org.cloudfoundry.tomcat",                    version = "1.1.91", optional = true },
   { id = "org.cloudfoundry.springboot",                version = "1.0.175", optional = true },
-  { id = "org.cloudfoundry.distzip",                   version = "1.0.160", optional = true },
+  { id = "org.cloudfoundry.distzip",                   version = "1.0.161", optional = true },
   { id = "org.cloudfoundry.procfile",                  version = "1.0.66", optional = true },
 
 ### Order does not matter
@@ -86,9 +86,9 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.distzip"
 name    = "Cloud Foundry DistZip Buildpack"
-version = "1.0.160"
-uri     = "https://storage.googleapis.com/cnb-buildpacks/dist-zip-cnb/org.cloudfoundry.distzip-1.0.160.tgz"
-sha256  = "b8b84d6f8293703f30f01e1a2b54844044c9ed5d80f69311ac7fc03e947727a3"
+version = "1.0.161"
+uri     = "https://storage.googleapis.com/cnb-buildpacks/dist-zip-cnb/org.cloudfoundry.distzip-1.0.161.tgz"
+sha256  = "8ca1c573851703364d194d3a74ce35cd318cf8e56537228d10f4e92ae49e997d"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
