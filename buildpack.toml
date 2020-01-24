@@ -35,7 +35,7 @@ group = [
 
 ### Order does not matter
   { id = "org.cloudfoundry.azureapplicationinsights",  version = "1.0.176", optional = true },
-  { id = "org.cloudfoundry.debug",                     version = "1.1.45", optional = true },
+  { id = "org.cloudfoundry.debug",                     version = "1.1.46", optional = true },
   { id = "org.cloudfoundry.googlestackdriver",         version = "1.0.123", optional = true },
   { id = "org.cloudfoundry.jdbc",                      version = "1.0.178", optional = true },
   { id = "org.cloudfoundry.jmx",                       version = "1.0.179", optional = true },
@@ -74,9 +74,9 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.debug"
 name    = "Cloud Foundry Debug Buildpack"
-version = "1.1.45"
-uri     = "https://storage.googleapis.com/cnb-buildpacks/debug-cnb/org.cloudfoundry.debug-1.1.45.tgz"
-sha256  = "f6080850a42e018405dd59cb7fed5e49cd2a7d100315a9dc7508ebdafb22a36b"
+version = "1.1.46"
+uri     = "https://storage.googleapis.com/cnb-buildpacks/debug-cnb/org.cloudfoundry.debug-1.1.46.tgz"
+sha256  = "3d2cd9f7d6d7ea239517093511e03a45a90e3e5bb122c41e75cd2ea29544086d"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
