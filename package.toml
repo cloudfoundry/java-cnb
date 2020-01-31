@@ -12,3 +12,36 @@ image = "docker.io/packeto/packages.azure-application-insights-cnb:1.1.0"
 
 [[dependencies]]
 image = "docker.io/packeto/packages.build-system-cnb:1.2.0"
+
+[[dependencies]]
+image = "docker.io/packeto/packages.debug-cnb:1.2.0"
+
+[[dependencies]]
+image = "docker.io/packeto/packages.dist-zip-cnb:1.1.0"
+
+[[dependencies]]
+image = "docker.io/packeto/packages.google-stackdriver-cnb:1.1.0"
+
+[[dependencies]]
+image = "docker.io/packeto/packages.jdbc-cnb:1.1.0"
+
+[[dependencies]]
+image = "docker.io/packeto/packages.jmx-cnb:1.1.0"
+
+[[dependencies]]
+image = "docker.io/packeto/packages.jvm-application-cnb:1.1.0"
+
+[[dependencies]]
+image = "docker.io/packeto/packages.openjdk-cnb:1.2.0"
+
+[[dependencies]]
+image = "docker.io/packeto/packages.procfile-cnb:1.1.0"
+
+[[dependencies]]
+image = "docker.io/packeto/packages.spring-auto-reconfiguration-cnb:1.1.0"
+
+[[dependencies]]
+image = "docker.io/packeto/packages.spring-boot-cnb:1.2.0"
+
+[[dependencies]]
+image = "docker.io/packeto/packages.tomcat-cnb:1.3.0"
