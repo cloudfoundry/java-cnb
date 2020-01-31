@@ -1,0 +1,11 @@
+[buildpack]
+uri = "../build"
+
+[[stacks]]
+id = "io.buildpacks.stacks.bionic"
+
+[[stacks]]
+id = "org.cloudfoundry.stacks.cflinuxfs3"
+
+[[dependencies]]
+image = "docker.io/packeto/packages.azure-application-insights-cnb:1.1.0"
