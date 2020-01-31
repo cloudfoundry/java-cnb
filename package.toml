@@ -9,3 +9,6 @@ id = "org.cloudfoundry.stacks.cflinuxfs3"
 
 [[dependencies]]
 image = "docker.io/packeto/packages.azure-application-insights-cnb:1.1.0"
+
+[[dependencies]]
+image = "docker.io/packeto/packages.build-system-cnb:1.2.0"
