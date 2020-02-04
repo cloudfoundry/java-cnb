@@ -23,7 +23,7 @@ version = "{{.Version}}"
 group = [
 
 ### Order is strictly enforced
-  { id = "org.cloudfoundry.openjdk",                   version = "1.2.3" },
+  { id = "org.cloudfoundry.openjdk",                   version = "1.2.6" },
   { id = "org.cloudfoundry.buildsystem",               version = "1.2.4", optional = true },
 
 ### Order determines precedence
@@ -146,9 +146,9 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 [[metadata.dependencies]]
 id      = "org.cloudfoundry.openjdk"
 name    = "Cloud Foundry OpenJDK Buildpack"
-version = "1.2.3"
-uri     = "https://storage.googleapis.com/cnb-buildpacks/openjdk-cnb/org.cloudfoundry.openjdk-1.2.3.tgz"
-sha256  = "bd344048a3d5621ab09fd3e16cd46ea394a343ade8b409e89e641e9581615417"
+version = "1.2.6"
+uri     = "https://storage.googleapis.com/cnb-buildpacks/openjdk-cnb/org.cloudfoundry.openjdk-1.2.6.tgz"
+sha256  = "6cd20fbb2964a177ec3c1d0edb825b04f6e6a42216a92f4da7a2a48735dbbe42"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
